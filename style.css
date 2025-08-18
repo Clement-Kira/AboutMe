@@ -1,0 +1,237 @@
+:root {
+    --bg-color: #f7f1e1;
+    --text-color: #222222;
+    --accent-color: #a9744f;
+}
+
+body.dark {
+    --bg-color: #1c1c1c;
+    --text-color: #f0f0f0;
+    --accent-color: #dcb18c;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+header {
+    background: var(--accent-color);
+    padding: 1rem 2rem;
+    /* position: sticky;
+    top: 0;
+    z-index: 1000; */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+nav h1 {
+    margin-right: auto; 
+    font-family: cursive;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--text-color);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 0;
+}
+
+span{
+    color: var(--accent-color);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    
+}
+
+h2{
+    font-size: 24px;
+    color: var(--text-color);
+    margin: 0.5rem 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+}
+
+.media-icons a{
+    margin-top: 10px;
+    /* display: flex; */
+    gap: 2rem;
+    margin-left: 10px;
+
+
+
+}
+
+#theme-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    transition: background 0.4s ease, color 0.4s ease;
+    animation: fadeIn 1s ease-in-out;
+
+}
+
+.hero-text {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--accent-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.project {
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+    background: rgba(0,0,0,0.05); 
+    padding: 10px;
+}
+
+.skills-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 0;
+}
+
+.skills-list label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.skills-list label:hover {
+    color: var(--accent-color);
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.skills-list img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.skills-list img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+
+
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 15vh;
+    resize: vertical;
+}
+
+form input:focus, form textarea:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.error {
+  color: red;
+  font-size: 15px;
+}
+
+
+form button {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #eee;
+    font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

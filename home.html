@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clement Kabelo | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("zweZMg6KAYJHGA0Kt");
+    })();
+  </script>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Clement Kabelo</h1>
+      <ul style="margin: auto;">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-text">
+      <img src="Images/graduation.JPG" alt="Clement Kabelo" style="width: 250px; border-radius: 50%; margin-bottom: 1rem;">
+      <h1>Hi, I am <span> Clement Kabelo Thipe </span></h1>
+      <h2>Aspiring Full-Stack Developer</h2>
+      <p>Passionate about building web apps, solving problems, and learning new technologies.</p>
+      <div>
+        <a href="#contact" class="btn">Hire Me</a>
+        <a href="Doc/ClementKira.dev_CV.pdf" class="btn" target="_blank">Get CV</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>---About Me---</h2>
+    <img src="Images/me.jpg" alt="Clement Kabelo" style="width: 300px; height:41vh; border-radius: 10px; float: right; margin-left: 2rem;">
+    <p>I am a tech driven graduate with a <span> Diploma in Business and Information Technology, obtained from University of Johannesburg.</span> <br>
+      I've worked on real-world mobile and web applications as a full-stack developer and deputy project manager. 
+      I aim to build intuitive, efficient, and scalable applications.
+      I'm currently seeking for a <br> hands-on internship opportunity or a junior developer role, where I can grow as a full-stack developer,
+      contribute to impactful projects, and learn from experienced professionals in the tech industry. 
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>---Projects---</h2>
+    <div class="project">
+      <h3>Kindergarten Admission System</h3>
+      <p>A full-stack web application where parents can apply for kindergarten admissions online.</p>
+    </div>
+    <div class="project">
+      <h3>Skills Exchange Platform</h3>
+      <p>A prototype website where users can swap skills like coding, design, or marketing for free.</p>
+    </div>
+    <div class="project">
+      <h3>Text-to-Speech</h3>
+      <p>A website technology that converts text into spoken audio.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>---Skills---</h2>
+    <div class="skills-list">
+      <label> HTML
+        <img src="/Images/html.png"/>
+      </label>
+            <label> CSS
+        <img src="/Images/css.png"/>
+      </label>
+            <label> JavaScript
+        <img src="/Images/js.png"/>
+      </label>
+      <label> React
+        <img src="/Images/react.png"/>
+      </label>
+      <label> Python
+        <img src="/Images/python.png"/>
+      </label>
+      <label> C#
+        <img src="/Images/c-sharp.png">
+      </label>
+            <label> Firebase
+        <img src="/Images/firebase.png"/>
+      </label>
+            <label> MySQL
+        <img src="/Images/database.png"/>
+      </label>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>---Contact Me---</h2>
+    <form id="contact-form">
+      <input type="text" name="name" id="name" placeholder="Your Name" >
+      <span id="name-error" class="error"></span>
+      
+      <input type="email" name="email" id="email" placeholder="Your Email" >
+      <span id="email-error" class="error"></span>
+
+      <input type="text" name="subject" id="subject" placeholder="Subject" >
+      <span id="subject-error" class="error"></span>
+
+      <textarea name="message" id="message" placeholder="Your Message" ></textarea>
+      <span id="message-error" class="error"></span>
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Clement Kabelo. All rights reserved.</p>
+  </footer>
+
+<script src="index.js"></script>
+</body>
+</html>
