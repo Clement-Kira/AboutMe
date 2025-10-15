@@ -1,2 +1,2 @@
 # AboutMe
-My Portfolio
+This is my Portfolio, go through the content to reach me
